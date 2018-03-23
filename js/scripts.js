@@ -45,4 +45,14 @@ $(document).ready(function() {
     $(".name").text(inputName);
 
   });
+
+  // $(".result").submit(function(event) {
+  //   event.preventDefault();
+  //
+  //   $("#java").fadeOut("slow");
+  //   $("#cssreact").fadeOut("slow");
+  //   $("#cnet").fadeOut("slow");
+  //
+  //   $("#survey").fadeIn("slow");
+  // });
 });
