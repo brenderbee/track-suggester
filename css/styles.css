@@ -1,8 +1,16 @@
+a {
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 h1, h2, h3 {
   font-family: "Lora", serif;
 }
 
-p, label, button {
+p, label,  {
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -32,14 +40,7 @@ p, label, button {
   font-size: 100px;
 }
 
-a {
-  color: #333333;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
+/*start of devicon styling*/
 .devicon-java-plain:hover {
   color: #ea2e2e;
 }
@@ -66,4 +67,12 @@ a:hover {
 
 .devicon-javascript-plain:hover {
   color: #f0db4e;
+}
+
+.result h2 {
+  margin-bottom: 30px;
+}
+
+.result .icons {
+  margin-bottom: 30px;
 }
