@@ -23,12 +23,49 @@
             <label for="name">Enter your name:</label>
             <input id="name" class="form-control" type="text">
           </div>
+<!-- NOTE: platform section -->
+          <div class="form-group">
+            <label for="platform">What platform interests you?</label>
+            <div class="radio">
+              <label>
+              <input type="radio" name="platform" value="mobile" checked>
+                Mobile. I want to build apps!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="platform" value="front" checked>
+                Front-end web development. I want to build websites!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="platform" value="back" checked>
+                Back-end development. I want to increase efficiency!
+              </label>
+            </div>
+          </div>
           <button type="submit" class="btn btn-info">Submit</button>
         </form>
       </div>
-      <div class="well" id="result">
-        <p><span class="name"></span>, here is your suggested track:</p>
-        <h2><span class="result"></span></h2>
+<!-- NOTE: Results of survey -->
+      <div class="well" id="java">
+        <div class="result">
+          <h2>Java/Android</h2>
+          <p>Congratulations, <span class="name"></span>! You have selected Java/Android as your track.</p>
+        </div>
+      </div>
+      <div class="well" id="cssreact">
+        <div class="result">
+          <h2>CSS/React</h2>
+          <p>Congratulations, <span class="name"></span>! You have selected CSS/React as your track.</p>
+        </div>
+      </div>
+      <div class="well" id="cnet">
+        <div class="result">
+          <h2>C#/.NET</h2>
+          <p>Congratulations, <span class="name"></span>! You have selected C#/.NET as your track.</p>
+        </div>
       </div>
     </div>
   </body>

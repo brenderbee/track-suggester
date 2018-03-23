@@ -2,10 +2,19 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    var inputName = $("input#name").val();
+    $("#java").hide();
+    $("#cssreact").hide();
+    $("#cnet").hide();
 
-    $("#result").show();
-    $("span.name").text(inputName);
+    var inputName = $("input#name").val();
+    var inputPlatform = $("input:radio[name=platform]:checked").val();
+
+
+
+    $("#java").show();
+    $("#cssreact").show();
+    $("#cnet").show();
+    $(".name").text(inputName);
 
   });
 });

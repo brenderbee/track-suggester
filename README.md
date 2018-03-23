@@ -8,6 +8,8 @@
 
 _This application will take input from the user and display what track at Epicodus the user should choose._
 
+_This application uses the flow chart provided at https://medium.freecodecamp.org/what-programming-language-should-i-learn-first-%CA%87d%C4%B1%C9%B9%C9%94s%C9%90%CA%8C%C9%90%C9%BE-%C9%B9%C7%9D%CA%8Dsu%C9%90-19a33b0a467d to develop survey questions._
+
 ## Setup/Installation Requirements
 
 * _View application at https://brenderbee.github.io/track-suggester_
