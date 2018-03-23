@@ -60,6 +60,10 @@ p, label,  {
   font-size: 100px;
 }
 
+.result p {
+  margin-bottom: 30px;
+}
+
 /*Devicon styling*/
 .devicon-java-plain:hover {
   color: #ea2e2e;

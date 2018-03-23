@@ -1,3 +1,8 @@
+//Function available at https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
@@ -56,18 +61,8 @@ $(document).ready(function() {
       $("#cnet").fadeIn("slow");
     }
 
-    $(".name").text(inputName);
+    $(".name").text(capitalizeFirstLetter(inputName));
 
   });
 
 });
-
-// $(".result").submit(function(event) {
-//   event.preventDefault();
-//
-//   $("#java").fadeOut("slow");
-//   $("#cssreact").fadeOut("slow");
-//   $("#cnet").fadeOut("slow");
-//
-//   $("#survey").fadeIn("slow");
-// });
