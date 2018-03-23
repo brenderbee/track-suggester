@@ -46,13 +46,14 @@ $(document).ready(function() {
 
   });
 
-  // $(".result").submit(function(event) {
-  //   event.preventDefault();
-  //
-  //   $("#java").fadeOut("slow");
-  //   $("#cssreact").fadeOut("slow");
-  //   $("#cnet").fadeOut("slow");
-  //
-  //   $("#survey").fadeIn("slow");
-  // });
 });
+
+// $(".result").submit(function(event) {
+//   event.preventDefault();
+//
+//   $("#java").fadeOut("slow");
+//   $("#cssreact").fadeOut("slow");
+//   $("#cnet").fadeOut("slow");
+//
+//   $("#survey").fadeIn("slow");
+// });
