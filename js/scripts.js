@@ -13,14 +13,27 @@ $(document).ready(function() {
     var inputRealTime = $("input:radio[name=realtime]:checked").val();
     var inputAndroid = $("input:radio[name=android]:checked").val();
 
+//start of Java/Android conditions
     if (inputPlatform === "mobile" && inputWorkPlace === "money" && inputAndroid === "true") {
       $("#java").show();
+    } else if (inputPlatform === "mobile" && inputWorkPlace === "money" || inputAndroid === "true"){
+      $("#java").show();
+    } else if (inputPlatform === "mobile" || inputWorkPlace === "money" && inputAndroid === "true"){
+      $("#java").show();
+//start of CSS/React conditions
     } else if (inputPlatform === "front" && inputWorkPlace === "startup" && inputRealTime === "true") {
-        $("#cssreact").show();
+      $("#cssreact").show();
+    } else if (inputPlatform === "front" && inputWorkPlace === "startup" || inputRealTime === "true") {
+      $("#cssreact").show();
+    } else if (inputPlatform === "front" || inputWorkPlace === "startup" && inputRealTime === "true") {
+      $("#cssreact").show();
+//start of c#/.NET conditions
     } else if (inputPlatform === "back" && inputWorkPlace === "corporate" && inputGaming === "true") {
-        $("#cnet").show();
-    } else {
-
+      $("#cnet").show();
+    } else if (inputPlatform === "back" && inputWorkPlace === "corporate" || inputGaming === "true") {
+      $("#cnet").show();
+    } else if (inputPlatform === "back" || inputWorkPlace === "corporate" && inputGaming === "true") {
+      $("#cnet").show();
     }
 
     $(".name").text(inputName);
