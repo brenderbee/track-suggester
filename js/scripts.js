@@ -16,32 +16,42 @@ $(document).ready(function() {
 
 //start of Java/Android conditions
     if (inputPlatform === "mobile" && inputWorkPlace === "money" && inputAndroid === "true") {
+      $("#survey").slideUp("slow");
       $("#java").fadeIn("slow");
     } else if (inputPlatform === "mobile" && inputWorkPlace === "money" || inputAndroid === "true"){
+      $("#survey").slideUp("slow");
       $("#java").fadeIn("slow");
     } else if (inputPlatform === "mobile" || inputWorkPlace === "money" && inputAndroid === "true"){
+      $("#survey").slideUp("slow");
       $("#java").fadeIn("slow");
     } else if (inputPlatform === "mobile" && inputWorkPlace === "startup" || inputAndroid === "tur") {
+      $("#survey").slideUp("slow");
       $("#java").fadeIn("slow");
 //start of CSS/React conditions
     } else if (inputPlatform === "front" && inputWorkPlace === "startup" && inputRealTime === "true") {
+      $("#survey").slideUp("slow");
       $("#cssreact").fadeIn("slow");
     } else if (inputPlatform === "front" && inputWorkPlace === "startup" || inputRealTime === "true") {
+      $("#survey").slideUp("slow");
       $("#cssreact").fadeIn("slow");
     } else if (inputPlatform === "front" || inputWorkPlace === "startup" && inputRealTime === "true") {
+      $("#survey").slideUp("slow");
       $("#cssreact").fadeIn("slow");
 //start of c#/.NET conditions
     } else if (inputPlatform === "back" && inputWorkPlace === "corporate" && inputGaming === "true") {
+      $("#survey").slideUp("slow");
       $("#cnet").fadeIn("slow");
     } else if (inputPlatform === "back" && inputWorkPlace === "corporate" || inputGaming === "true") {
+      $("#survey").slideUp("slow");
       $("#cnet").fadeIn("slow");
     } else if (inputPlatform === "back" || inputWorkPlace === "corporate" && inputGaming === "true") {
+      $("#survey").slideUp("slow");
       $("#cnet").fadeIn("slow");
     } else {
+      $("#survey").slideUp("slow");
       $("#cnet").fadeIn("slow");
     }
 
-    $("#survey").fadeOut("slow");
     $(".name").text(inputName);
 
   });
