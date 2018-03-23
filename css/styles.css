@@ -1,12 +1,20 @@
+h1, h2, h3 {
+  font-family: "Lora", serif;
+}
+
+p, label, button {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 #java {
   display: none;
-  margin: 0 30%;
+  margin: 0 20%;
   min-width: 320px;
 }
 
 #cssreact {
   display: none;
-  margin: 0 30%;
+  margin: 0 20%;
   min-width: 320px;
 }
 
@@ -26,7 +34,6 @@
 
 a {
   color: #333333;
-  display: block;
 }
 
 a:hover {
