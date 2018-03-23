@@ -13,13 +13,14 @@ $(document).ready(function() {
     var inputRealTime = $("input:radio[name=realtime]:checked").val();
     var inputAndroid = $("input:radio[name=android]:checked").val();
 
-
-    if (inputPlatform === "mobile") {
+    if (inputPlatform === "mobile" && inputWorkPlace === "money" && inputAndroid === "true") {
       $("#java").show();
-    } else if (inputPlatform === "front") {
-      $("#cssreact").show();
+    } else if (inputPlatform === "front" && inputWorkPlace === "startup" && inputRealTime === "true") {
+        $("#cssreact").show();
+    } else if (inputPlatform === "back" && inputWorkPlace === "corporate" && inputGaming === "true") {
+        $("#cnet").show();
     } else {
-      $("#cnet").show();
+
     }
 
     $(".name").text(inputName);
