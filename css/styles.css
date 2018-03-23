@@ -1,11 +1,21 @@
 #java {
   display: none;
+  margin: 0 30%;
 }
 
 #cssreact {
   display: none;
+  margin: 0 30%;
 }
 
 #cnet {
   display: none;
+  margin: 0 30%;
+}
+.result {
+  text-align: center;
+}
+
+.result i {
+  font-size: 100px;
 }
