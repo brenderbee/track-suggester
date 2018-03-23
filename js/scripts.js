@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
+//Hide results at the start of this function
     $("#java").hide();
     $("#cssreact").hide();
     $("#cnet").hide();
@@ -15,27 +16,32 @@ $(document).ready(function() {
 
 //start of Java/Android conditions
     if (inputPlatform === "mobile" && inputWorkPlace === "money" && inputAndroid === "true") {
-      $("#java").show();
+      $("#java").fadeIn("slow");
     } else if (inputPlatform === "mobile" && inputWorkPlace === "money" || inputAndroid === "true"){
-      $("#java").show();
+      $("#java").fadeIn("slow");
     } else if (inputPlatform === "mobile" || inputWorkPlace === "money" && inputAndroid === "true"){
-      $("#java").show();
+      $("#java").fadeIn("slow");
+    } else if (inputPlatform === "mobile" && inputWorkPlace === "startup" || inputAndroid === "tur") {
+      $("#java").fadeIn("slow");
 //start of CSS/React conditions
     } else if (inputPlatform === "front" && inputWorkPlace === "startup" && inputRealTime === "true") {
-      $("#cssreact").show();
+      $("#cssreact").fadeIn("slow");
     } else if (inputPlatform === "front" && inputWorkPlace === "startup" || inputRealTime === "true") {
-      $("#cssreact").show();
+      $("#cssreact").fadeIn("slow");
     } else if (inputPlatform === "front" || inputWorkPlace === "startup" && inputRealTime === "true") {
-      $("#cssreact").show();
+      $("#cssreact").fadeIn("slow");
 //start of c#/.NET conditions
     } else if (inputPlatform === "back" && inputWorkPlace === "corporate" && inputGaming === "true") {
-      $("#cnet").show();
+      $("#cnet").fadeIn("slow");
     } else if (inputPlatform === "back" && inputWorkPlace === "corporate" || inputGaming === "true") {
-      $("#cnet").show();
+      $("#cnet").fadeIn("slow");
     } else if (inputPlatform === "back" || inputWorkPlace === "corporate" && inputGaming === "true") {
-      $("#cnet").show();
+      $("#cnet").fadeIn("slow");
+    } else {
+      $("#cnet").fadeIn("slow");
     }
 
+    $("#survey").fadeOut("slow");
     $(".name").text(inputName);
 
   });
