@@ -34,6 +34,11 @@ p, label,  {
   min-width: 320px;
 }
 
+#noresult {
+  display: none;
+  min-width: 320px;
+}
+
 /*Bottom borders for questions*/
 .form-group {
   border-top: 1px solid #333333;

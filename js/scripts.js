@@ -13,6 +13,7 @@ $(document).ready(function() {
     var inputGaming = $("input:radio[name=gaming]:checked").val();
     var inputRealTime = $("input:radio[name=realtime]:checked").val();
     var inputAndroid = $("input:radio[name=android]:checked").val();
+    var isChecked = $(".radio input").is(":checked"); //This line of code from http://www.jquerybyexample.net/2012/06/check-if-radio-button-is-checked-or.html
 
 //start of Java/Android conditions
     if (inputPlatform === "mobile" && inputWorkPlace === "money" && inputAndroid === "true") {
@@ -47,6 +48,9 @@ $(document).ready(function() {
     } else if (inputPlatform === "back" || inputWorkPlace === "corporate" && inputGaming === "true") {
       $("#survey").slideUp("slow");
       $("#cnet").fadeIn("slow");
+    } else if (isChecked = true) {
+      $("#survey").slideUp("slow");
+      $("#noresult").fadeIn("slow");
     } else {
       $("#survey").slideUp("slow");
       $("#cnet").fadeIn("slow");
