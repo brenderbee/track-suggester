@@ -22,7 +22,7 @@ _No other libraries required. Bootstrap and jquery files provided with project._
 
 ## Known Bugs
 
-_No known bugs at this time._
+_Survey still returns a result even if not all of the radio buttons are selected._
 
 ## Support and contact details
 
