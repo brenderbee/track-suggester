@@ -23,3 +23,40 @@
 .result i {
   font-size: 100px;
 }
+
+a {
+  color: #333333;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.devicon-java-plain:hover {
+  color: #ea2e2e;
+}
+
+.devicon-android-plain:hover {
+  color: #a4c538;
+}
+
+.devicon-css3-plain:hover {
+  color: #3c8ec6;
+}
+
+.devicon-react-original:hover {
+  color: #60dafb;
+}
+
+.devicon-csharp-plain:hover {
+  color: #672179;
+}
+
+.devicon-dot-net-plain:hover {
+  color: #1383c9;
+}
+
+.devicon-javascript-plain:hover {
+  color: #f0db4e;
+}
