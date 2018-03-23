@@ -9,6 +9,27 @@
     <title></title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+      <h1>Track Suggester for Developers</h1>
+      <p>Let us help you decide which track to take at Epicodus!</p>
+      </div>
+      <div class="well" id="survey">
+        <h2>Survey</h2>
+        <p>Fill out the survey below:</p>
+        <form>
+<!-- NOTE: Name field -->
+          <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+      <div class="well" id="result">
+        <p><span class="name"></span>, here is your suggested track:</p>
+        <h2><span class="result"></span></h2>
+      </div>
+    </div>
   </body>
 </html>
