@@ -10,10 +10,15 @@ h1, h2, h3 {
   font-family: "Lora", serif;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 p, label,  {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/*Hide results until after survey is submitted*/
 #java {
   display: none;
   min-width: 320px;
@@ -29,6 +34,19 @@ p, label,  {
   min-width: 320px;
 }
 
+/*Bottom borders for questions*/
+.form-group {
+  border-top: 1px solid #333333;
+}
+
+#name-box {
+  border-top: none;
+}
+
+#question {
+  border-top: none;
+}
+
 .result {
   text-align: center;
 }
@@ -37,7 +55,7 @@ p, label,  {
   font-size: 100px;
 }
 
-/*start of devicon styling*/
+/*Devicon styling*/
 .devicon-java-plain:hover {
   color: #ea2e2e;
 }
