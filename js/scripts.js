@@ -9,11 +9,14 @@ $(document).ready(function() {
     var inputName = $("input#name").val();
     var inputPlatform = $("input:radio[name=platform]:checked").val();
 
+    if (inputPlatform === "mobile") {
+      $("#java").show();
+    } else if (inputPlatform === "front") {
+      $("#cssreact").show();
+    } else {
+      $("#cnet").show();
+    }
 
-
-    $("#java").show();
-    $("#cssreact").show();
-    $("#cnet").show();
     $(".name").text(inputName);
 
   });
