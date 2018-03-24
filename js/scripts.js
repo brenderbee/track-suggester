@@ -30,7 +30,7 @@ $(document).ready(function() {
     } else if (inputPlatform === "mobile" || inputWorkPlace === "money" && inputAndroid === "true"){
       $("#survey").slideUp("slow");
       $("#java").fadeIn("slow");
-    } else if (inputPlatform === "mobile" && inputWorkPlace === "startup" || inputAndroid === "tur") {
+    } else if (inputPlatform === "mobile" && inputWorkPlace === "startup" || inputAndroid === "true") {
       $("#survey").slideUp("slow");
       $("#java").fadeIn("slow");
 //start of CSS/React conditions
